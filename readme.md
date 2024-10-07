@@ -84,8 +84,9 @@ O *dataset* disponibilizado contém um total de 2240 instâncias e 29 colunas, q
 |   27  	|      Z_Revenue      	|                         *difícil inferência*                         	|
 |   28  	|       Response      	| 1 se o cliente aceitou a oferta na última campanha, 0 caso contrário 	|
 
-## 2.X Exploratory Data Analysis
+## 2.2 Análise Exploratória dos Dados
 
 >**[Nota]:** 
-A fim de adquirir uma macrovisão do contexto apresentado no case, foi elaborada uma análise exploratória dos dados. O código utilizado pode ser verificado em `src/eda.ipynb`, que foi utilizado como um ambiente de prototipagem e visualização. Algumas das funções utilizadas durante o processo de EDA constam no script `eda.py`. Este script contém uma série de métodos e propriedades básicos e foi programado com o intuito de reduzir a verbosidade e repetição de operações no ambiente Jupyter.
+A fim de adquirir uma macrovisão do contexto apresentado no case, foi elaborada uma análise exploratória dos dados. O código utilizado pode ser verificado em `src/eda.ipynb`, que foi utilizado como um ambiente de prototipagem e visualização. Optou-se por realizar todo o processo de EDA e data cleaning neste Jupyter Notebook, sem a utilização de módulos. Neste sentido, indica-se a possibilidade de se elaborar, futuramente, um script que contenha funções capazes de executar o pré-processamento deste conjunto de dados, a fim de reduzir a verbosidade do código e melhorar sua organização.
 
+Nesta seção, serão apresentados aspectos preliminares de análise dos dados. Para algumas variáveis, nos caso necessários, foi concomitantemente realizado o pré-processamento do dataset: excluindo-se valores faltantes, duplicados (quando houver) e, também, um tratamento de *outliers*, como no caso da coluna `'Income'`.
